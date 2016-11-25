@@ -237,11 +237,12 @@ public class WechatService {
 	}
 	
 	/**
-	 * (公司更新)
+	 * 公司更新（idea错误提示比eclipse好很多）
 	 * @param companyId
-	 * @param employeeId
+	 * @param accountId
+	 * @param business
 	 * @return
-	*/
+	 */
 	public boolean updateCompany(int companyId,int accountId,String business){
 		Boolean bl = true;
 		// 填写sql语句
