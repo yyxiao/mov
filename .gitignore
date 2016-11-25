@@ -30,4 +30,7 @@ jdbc.properties
 *.iws
 *.idea
 
+*.xls
+
+
 README.html

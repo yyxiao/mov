@@ -38,7 +38,7 @@ import java.util.regex.Pattern;
 public final class StringHelper {
 	
 	/**
-	 * TODO(发送接口是否成功)
+	 * (发送接口是否成功)
 	 * @param type
 	 * @return
 	*/

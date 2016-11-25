@@ -17,7 +17,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.action.Reward;
+import com.entity.Reward;
 import com.util.DBHelper;
 import com.util.HashKit;
 import com.util.StringHelper;

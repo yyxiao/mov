@@ -35,7 +35,7 @@ public class ReadProperties {
 	private Properties properties;
 	
 	/**
-	 * TODO
+	 * 读取资源文件
 	 * @param fileName
 	*/
 	public ReadProperties(String fileName) {
@@ -44,7 +44,6 @@ public class ReadProperties {
 		try {
 			properties.load(stream);
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 		properties.putAll(System.getProperties());
