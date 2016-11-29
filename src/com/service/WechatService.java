@@ -12,15 +12,14 @@ package com.service;
 
 import java.sql.ResultSet;
 
-import org.apache.log4j.Logger;
-
 import com.util.DBHelper;
 import com.util.StringHelper;
+import org.apache.log4j.Logger;
 
 public class WechatService {
 	private Logger logger = Logger.getLogger(WechatService.class);
 	
-	DBHelper db = null;  
+	DBHelper db = null;
 	ResultSet resultSet = null;
 	/**
 	 * (查询departmentId)

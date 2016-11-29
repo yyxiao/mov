@@ -25,7 +25,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @date   2016年4月12日 下午4:06:14	
  *
- * @class com.test.ParalllelDemo
+ * @class ParalllelDemo
  *
  */ 
 public class ParalllelDemo {

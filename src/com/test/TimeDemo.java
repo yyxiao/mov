@@ -31,7 +31,7 @@ import java.time.ZonedDateTime;
  *
  * @date   2016年4月12日 上午11:22:09	
  *
- * @class com.test.TimeDemo
+ * @class TimeDemo
  *
  */ 
 public class TimeDemo {

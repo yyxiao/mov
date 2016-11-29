@@ -22,7 +22,7 @@ package com.test.run;
  *
  * @date   2016年5月26日 上午8:08:27	
  *
- * @class com.test.run.RuntimeConstantPoolDemo
+ * @class RuntimeConstantPoolDemo
  *
  */ 
 public class RuntimeConstantPoolDemo {

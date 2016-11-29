@@ -42,7 +42,7 @@ import org.apache.commons.logging.LogFactory;
  *
  * @date   2016年4月13日 上午11:29:14	
  *
- * @class com.util.StringUtil
+ * @class StringUtil
  *
  */ 
 public class StringUtil {
@@ -202,7 +202,6 @@ public class StringUtil {
 	 * @param len
 	 *            　字符串长度　长度计量单位为一个GBK汉字　　两个英文字母计算为一个单位长度
 	 * @param str
-	 * @param symbol
 	 * @return12
 	 */
 	public static String getLimitLengthString(String str, int len) {
@@ -439,7 +438,6 @@ public class StringUtil {
 	/**
 	 * 解析字符串返回 名称=值的参数表 (a=1&b=2 => a=1,b=2)
 	 * 
-	 * @see test.koubei.util.StringUtilTest#testParseStr()
 	 * @param str
 	 * @return
 	 */
@@ -565,7 +563,7 @@ public class StringUtil {
 	 * 在sou中是否存在finds 如果指定的finds字符串有一个在sou中找到,返回true;
 	 * 
 	 * @param sou
-	 * @param find
+	 * @param finds
 	 * @return
 	 */
 	public static boolean strPos(String sou, String... finds) {
@@ -788,9 +786,7 @@ public class StringUtil {
 	/**
 	 * 全角生成半角
 	 * 
-	 * @author bailong
-	 * @date 2007-08-29
-	 * @param str
+	 * @param QJstr
 	 * @return
 	 */
 	public static String Q2B(String QJstr) {
@@ -845,12 +841,9 @@ public class StringUtil {
 	}
 
 	/**
-	 * *************************************************************************
-	 * 修改：刘黎明 修改时间:2007/3/1
-	 * 
+	 *
 	 * @param str
 	 * @return
-	 ************************************************************************* 
 	 */
 	public static String removeHTMLLableExe(String str) {
 		str = stringReplace(str, ">\\s*<", "><");
@@ -1208,8 +1201,7 @@ public class StringUtil {
 	 * *************************************************************************
 	 * 用要通过URL传输的内容进行编码
 	 * 
-	 * @author 刘黎明
-	 * @param 源字符串
+	 * @param src
 	 * @return 经过编码的内容
 	 ************************************************************************* 
 	 */
@@ -1229,14 +1221,9 @@ public class StringUtil {
 	}
 
 	/**
-	 * *************************************************************************
-	 * 
-	 * @author 李锋 2007.4.18
-	 * @param 传入
-	 *            &#31119;test&#29031;&#27004;&#65288;&#21271;&#22823;&#38376;&#24635
-	 *            ;&#24215;&#65289;&#31119;
+	 *
+	 * @param str
 	 * @return 经过解码的内容
-	 ************************************************************************* 
 	 */
 	public static String getGBK(String str) {
 
@@ -1261,10 +1248,8 @@ public class StringUtil {
 
 	/**
 	 * yahoo首页中切割字符串.
-	 * 
-	 * @author yxg
-	 * @date 2007-09-17
-	 * @param str
+	 * @param subject
+	 * @param size
 	 * @return
 	 */
 	public static String subYhooString(String subject, int size) {
@@ -1332,9 +1317,8 @@ public class StringUtil {
 
 	/**
 	 * 判断文字内容重复
-	 * 
-	 * @author 沙枣
-	 * @Date 2008-04-17
+	 * @param content
+	 * @return
 	 */
 	public static boolean isContentRepeat(String content) {
 		int similarNum = 0;
@@ -1392,7 +1376,6 @@ public class StringUtil {
 	/**
 	 * Ascii转为Char
 	 * 
-	 * @author 甜瓜
 	 * @param asc
 	 * @return
 	 */
@@ -1581,7 +1564,7 @@ public class StringUtil {
 	/**
 	 * 根据指定整型list 组装成为一个字符串
 	 * 
-	 * @param src
+	 * @param list
 	 * @return
 	 */
 	public static String listToString(List<Integer> list) {
@@ -1695,8 +1678,6 @@ public class StringUtil {
 	/**
 	 * 全角字符变半角字符
 	 * 
-	 * @author shazao
-	 * @date 2008-04-03
 	 * @param str
 	 * @return
 	 */
@@ -1789,7 +1770,6 @@ public class StringUtil {
 	 *            重复参数名的参数值之间的连接符，连接后的字符串作为该参数的参数值，可为null
 	 *            null：不允许重复参数名出现，则靠后的参数值会覆盖掉靠前的参数值。
 	 * @return map
-	 * @author sky
 	 */
 	@SuppressWarnings("unchecked")
 	public static Map<String, String> parseQuery(String query, char split1,

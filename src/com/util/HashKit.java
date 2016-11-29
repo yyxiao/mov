@@ -24,7 +24,7 @@ import java.security.MessageDigest;
  *
  * @date   2016年2月24日 下午2:37:19	
  *
- * @class com.util.HashKit
+ * @class HashKit
  *
  */ 
 public class HashKit {

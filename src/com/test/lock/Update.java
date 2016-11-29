@@ -10,8 +10,6 @@
 */
 package com.test.lock;
 
-import com.test.lock.Update.Builder;
-
 public class Update {
 
 	public interface ObjBuilder<T>{

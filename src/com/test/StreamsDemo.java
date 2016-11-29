@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
  *
  * @date   2016年4月11日 下午5:56:45	
  *
- * @class com.test.StreamsDemo
+ * @class StreamsDemo
  *
  */ 
 public class StreamsDemo {

@@ -27,17 +27,18 @@ public class DBHelper {
     public Connection conn = null;  
     public PreparedStatement pst = null;  
   
-    public DBHelper(String sql) {  
-        try {  
-        	ReadProperties rp = new ReadProperties("/jdbc.properties");
-        	String url = StringHelper.toString(rp.getProperty("mysql_address"));
-        	String userName = StringHelper.toString(rp.getProperty("mysql_user"));
-        	String userPwd = StringHelper.toString(rp.getProperty("mysql_pwd"));
+    public DBHelper(String sql) {
+        try {
+//        	ReadProperties rp = new ReadProperties("/jdbc.properties");
+//        	String url = StringHelper.toString(rp.getProperty("mysql_address"));
+//        	String userName = StringHelper.toString(rp.getProperty("mysql_user"));
+//        	String userPwd = StringHelper.toString(rp.getProperty("mysql_pwd"));
         	//指定连接类型 
         	Class.forName(driverName);
         	//获取连接  
-            conn = DriverManager.getConnection(url, userName, userPwd);
-            //准备执行语句  
+//            conn = DriverManager.getConnection(url, userName, userPwd);
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8", "root", "root");
+            //准备执行语句
             pst = conn.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
         } catch (Exception e) {  
             e.printStackTrace();  

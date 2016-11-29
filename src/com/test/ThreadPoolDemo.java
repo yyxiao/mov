@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @date   2016年7月14日 下午2:30:40	
  *
- * @class com.test.ThreadPoolDemo
+ * @class ThreadPoolDemo
  *
  */ 
 public class ThreadPoolDemo {

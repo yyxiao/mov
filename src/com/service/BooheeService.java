@@ -56,6 +56,7 @@ public class BooheeService {
                     boohee.setUrl(rs.getString(2));
                     if (rs.getBlob(3) instanceof Blob) {
                         Gson gson = new Gson();
+                        System.out.println(rs.getString(3));
                         Result result = gson.fromJson(rs.getString(3), Result.class);
                         boohee.setResult(result);
                         resultList.add(result);
@@ -77,8 +78,8 @@ public class BooheeService {
      */
     public void CreateExcel(List<Result> resultList) {
         try {
-            WritableWorkbook book = Workbook.createWorkbook(new File("牛掰的excel.xls"));
-            WritableSheet sheet = book.createSheet("乌拉拉", 0);
+            WritableWorkbook book = Workbook.createWorkbook(new File("薄荷网excel.xls"));
+            WritableSheet sheet = book.createSheet("薄荷数据", 0);
             // 插入表头
             for (int i = 0; i < Constants.title_row_all.length; i++) {
                 Label label = new Label(i, 0, Constants.title_row_all[i]);
@@ -88,6 +89,9 @@ public class BooheeService {
             // 插入数据
             for (int i = 0; i < resultList.size(); i++) {
                 Label label = new Label(0, i + 1, resultList.get(i).getName());
+                sheet.addCell(label);
+                Label label2 = new Label(1, i + 1, resultList.get(i).getOther_name());
+                sheet.addCell(label2);
                 String contents = resultList.get(i).getContents();
                 String[] contentArr = contents.split(" ");
                 // 判断title是否存在
@@ -95,23 +99,22 @@ public class BooheeService {
                     if (Arrays.asList(contentArr).contains(Constants.title_row[j])) {
                         for (int k = 0; k < contentArr.length; k++) {
                             if (contentArr[k].equals(Constants.title_row[j])) {
-                                Label label1 = new Label(j + 1, i + 1, contentArr[k + 1]);
+                                Label label1 = new Label(j + 2, i + 1, contentArr[k + 1]);
                                 sheet.addCell(label1);
                             }
                         }
                     } else {
 //                        Label label1 = new Label(j + 1, i + 1, "——");
-                        Label label1 = new Label(j + 1, i + 1, "一");
+                        Label label1 = new Label(j + 2, i + 1, "一");
                         sheet.addCell(label1);
                     }
                 }
-                sheet.addCell(label);
             }
             //  写入数据并关闭文件
             book.write();
             book.close();
         } catch (Exception e) {
-            System.out.println("生成Excel出错" + e);
+            logger.error("生成Excel出错" + e);
         }
 
     }

@@ -22,7 +22,7 @@ package com.test;
  *
  * @date   2016年5月14日 下午2:58:57	
  *
- * @class com.test.CacheDemo
+ * @class CacheDemo
  *
  */ 
 public class CacheDemo {

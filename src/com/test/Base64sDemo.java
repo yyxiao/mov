@@ -25,7 +25,7 @@ import java.util.Base64;
  *
  * @date   2016年4月12日 下午1:49:54	
  *
- * @class com.test.Base64sDemo
+ * @class Base64sDemo
  *
  */ 
 public class Base64sDemo {

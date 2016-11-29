@@ -1,9 +1,9 @@
 /**
  * ReadProperties.java
  * com.xyy.util
- * author      date      	
+ * author      date
  * ──────────────────────────────────
- * xiao    2015-4-14 		
+ * xiao    2015-4-14
  * Copyright (c)2015, All Rights Reserved.
  * Java源代码,未经许可禁止任何人、任何组织通过任何
  * 渠道使用、修改源代码.
@@ -25,15 +25,15 @@ import java.util.ResourceBundle;
  *
  * @author xiaoyy
  *
- * @date   2016年1月19日 下午6:19:25	
+ * @date   2016年1月19日 下午6:19:25
  *
- * @class com.util.ReadProperties
+ * @class ReadProperties
  *
- */ 
+ */
 public class ReadProperties {
 
 	private Properties properties;
-	
+
 	/**
 	 * 读取资源文件
 	 * @param fileName
@@ -58,7 +58,7 @@ public class ReadProperties {
 		String result = getFile(fileName).getString(propertyName);
 		return result;
 	}
-	
+
 	public PropertyResourceBundle getFile(String fileName){
 		return (PropertyResourceBundle) ResourceBundle.getBundle(fileName);
 	}

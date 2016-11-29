@@ -24,7 +24,7 @@ import java.util.function.Supplier;
  *
  * @date   2016年4月11日 下午1:47:48	
  *
- * @class com.test.DefaulableDemo
+ * @class DefaulableDemo
  *
  */ 
 public class DefaulableDemo {

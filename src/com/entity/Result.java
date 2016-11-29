@@ -16,6 +16,8 @@ public class Result {
 
     private String url;
 
+    private String other_name;
+
     public void setName(String name){
         this.name = name;
     }
@@ -35,4 +37,11 @@ public class Result {
         return this.url;
     }
 
+    public String getOther_name() {
+        return other_name;
+    }
+
+    public void setOther_name(String other_name) {
+        this.other_name = other_name;
+    }
 }
