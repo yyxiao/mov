@@ -35,7 +35,7 @@ public class BooheeService {
     static DBHelper db = null;
     static ResultSet rs = null;
 
-    private Logger logger = Logger.getLogger(BooheeService.class);
+    public Logger logger = Logger.getLogger(BooheeService.class);
 
     /**
      * 获取食品数据list，并进行gson转换对象处理
@@ -92,11 +92,11 @@ public class BooheeService {
                 Label label = new Label(0, i + 1, resultList.get(i).getName());
                 sheet.addCell(label);
                 // type add
-                Label label_type = new Label(1, i+1, resultList.get(i).getType());
-                sheet.addCell(label_type);
+                Label labelType = new Label(1, i + 1, resultList.get(i).getType());
+                sheet.addCell(labelType);
                 // other_name add
                 Label label2 = new Label(2, i + 1, resultList.get(i).getOther_name());
-                if(StringHelper.isEmptyObject(resultList.get(i).getOther_name())){
+                if (StringHelper.isEmptyObject(resultList.get(i).getOther_name())) {
                     label2 = new Label(2, i + 1, "一");
                 }
                 sheet.addCell(label2);
@@ -116,6 +116,13 @@ public class BooheeService {
                         Label label1 = new Label(j + 3, i + 1, "一");
                         sheet.addCell(label1);
                     }
+                }
+                // otherNames
+                String otherName = resultList.get(i).getOther_name();
+                String[] otherNames = otherName.split("、");
+                for (int l = 0; l < otherNames.length; l++) {
+                    Label labelOtherName = new Label(l + Constants.title_row_all.length, i + 1, otherNames[l]);
+                    sheet.addCell(labelOtherName);
                 }
             }
             //  写入数据并关闭文件
