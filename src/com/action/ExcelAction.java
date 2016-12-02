@@ -10,8 +10,8 @@ import java.util.List;
  * com.action
  *
  * @author xiaoyy
- * @description 处理转存excel
- * @create 2016-11-25 上午9:59
+ * 处理转存excel
+ * 2016-11-25 上午9:59
  * The word 'impossible' is not in my dictionary.
  */
 public class ExcelAction {
