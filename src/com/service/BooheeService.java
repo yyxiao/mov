@@ -40,7 +40,7 @@ public class BooheeService {
     /**
      * 获取食品数据list，并进行gson转换对象处理
      *
-     * @return
+     * @return resultList 获取结果List
      */
     public List<Result> booheeList() {
         List<Boohee> booheeList = new ArrayList<>();
@@ -56,7 +56,7 @@ public class BooheeService {
                     boohee.setUrl(rs.getString(2));
                     if (rs.getBlob(3) instanceof Blob) {
                         Gson gson = new Gson();
-                        System.out.println(rs.getString(3));
+//                        System.out.println(rs.getString(3));
                         Result result = gson.fromJson(rs.getString(3), Result.class);
                         boohee.setResult(result);
                         resultList.add(result);
@@ -74,7 +74,7 @@ public class BooheeService {
     /**
      * 生成处理Excel
      *
-     * @param resultList
+     * @param resultList 查询结果列表
      */
     public void CreateExcel(List<Result> resultList) {
         try {
@@ -88,9 +88,17 @@ public class BooheeService {
 
             // 插入数据
             for (int i = 0; i < resultList.size(); i++) {
+                // name add
                 Label label = new Label(0, i + 1, resultList.get(i).getName());
                 sheet.addCell(label);
-                Label label2 = new Label(1, i + 1, resultList.get(i).getOther_name());
+                // type add
+                Label label_type = new Label(1, i+1, resultList.get(i).getType());
+                sheet.addCell(label_type);
+                // other_name add
+                Label label2 = new Label(2, i + 1, resultList.get(i).getOther_name());
+                if(StringHelper.isEmptyObject(resultList.get(i).getOther_name())){
+                    label2 = new Label(2, i + 1, "一");
+                }
                 sheet.addCell(label2);
                 String contents = resultList.get(i).getContents();
                 String[] contentArr = contents.split(" ");
@@ -99,13 +107,13 @@ public class BooheeService {
                     if (Arrays.asList(contentArr).contains(Constants.title_row[j])) {
                         for (int k = 0; k < contentArr.length; k++) {
                             if (contentArr[k].equals(Constants.title_row[j])) {
-                                Label label1 = new Label(j + 2, i + 1, contentArr[k + 1]);
+                                Label label1 = new Label(j + 3, i + 1, contentArr[k + 1]);
                                 sheet.addCell(label1);
                             }
                         }
                     } else {
 //                        Label label1 = new Label(j + 1, i + 1, "——");
-                        Label label1 = new Label(j + 2, i + 1, "一");
+                        Label label1 = new Label(j + 3, i + 1, "一");
                         sheet.addCell(label1);
                     }
                 }
