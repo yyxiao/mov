@@ -45,5 +45,17 @@ public class SimpleQueueDemo {
             System.out.println("peek元素后：" + q);
         }
 
+        // test while circulation queue.
+        Queue<String> queue1 = new LinkedList();
+        queue1.offer("Hello");
+        queue1.offer("World!");
+        queue1.offer("你好！");
+        System.out.println(queue1.size());
+        String str;
+        while((str=queue1.poll())!=null){
+            System.out.println(str);
+        }
+        System.out.println();
+        System.out.println(queue1.size());
     }
 }
