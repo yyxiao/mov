@@ -25,6 +25,7 @@ setting.conf
 jdbc.properties
 # IntelliJ IDEA Files
 
+*.MF
 *.iml
 *.ipr
 *.iws
