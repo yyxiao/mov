@@ -25,5 +25,6 @@ dependencies {
     compile "junit:junit:4.5"
     compile "net.sourceforge.jexcelapi:jxl:2.6.12"
     compile "com.google.code.gson:gson:2.7"
+    compile "org.apache.hadoop:hadoop-core:1.2.1"
 }
   
