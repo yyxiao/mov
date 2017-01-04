@@ -10,13 +10,15 @@ sourceSets.main.java.srcDir 'src'   // 设置 Java 源码所在目录
   
 // 设置 maven 库地址
 repositories { 
-//    mavenLocal()
-    mavenCentral() // 中央库
+    mavenLocal()
+//    mavenCentral() // 中央库
+//    maven{url 'http://uk.maven.org/maven2'}
+    maven{url 'http://jcenter.bintray.com/'}
     //mavenRepo urls: "http://maven.oschina.net/content/groups/public/"
-    //maven{ url 'http://maven.oschina.net/content/groups/public/'}
+//    maven{ url 'http://maven.oschina.net/content/groups/public/'}
     //maven{ url 'http://maven.outofmemory.cn/'}
 }
-  
+
 // 设置依赖
 dependencies {
     compile "mysql:mysql-connector-java:5.1.36"
@@ -26,5 +28,8 @@ dependencies {
     compile "net.sourceforge.jexcelapi:jxl:2.6.12"
     compile "com.google.code.gson:gson:2.7"
     compile "org.apache.hadoop:hadoop-core:1.2.1"
+    compile "org.apache.hadoop:hadoop-common:2.7.3"
+    compile "org.apache.hadoop:hadoop-client:2.7.3"
+    compile "org.apache.hadoop:hadoop-hdfs:2.7.3"
 }
-  
+

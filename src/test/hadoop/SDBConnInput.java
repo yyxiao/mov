@@ -1,4 +1,4 @@
-/**
+package hadoop; /**
  * SDBConnInput
  * <p>
  * PACKAGE_NAME
@@ -12,10 +12,18 @@ import org.apache.hadoop.mapred.lib.db.*;
 import java.sql.*;
 import java.io.*;
 import java.util.*;
-import org.apache.hadoop.conf.Configuration;
+
 import org.apache.hadoop.mapred.*;
 import org.apache.hadoop.fs.Path;
 
+
+/**
+ * SDBConnInput
+ * 从关系型数据库读取到HDFS
+ * @author Xender
+ * @Date 16/12/30 上午9:25
+ * The word 'impossible' is not in my dictionary.
+ */
 public class SDBConnInput {
     public static class CustomerRecord implements Writable,DBWritable{
         String customerID;
