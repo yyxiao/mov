@@ -32,5 +32,7 @@ dependencies {
     compile "org.apache.hadoop:hadoop-common:2.7.3"
     compile "org.apache.hadoop:hadoop-client:2.7.3"
     compile "org.apache.hadoop:hadoop-hdfs:2.7.3"
+    // 添加activemq队列
+    compile "org.apache.activemq:activemq-all:5.9.0"
 }
 
