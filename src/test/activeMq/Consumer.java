@@ -46,6 +46,7 @@ public class Consumer {
     public void getMessage(String disname) {
         try {
             Queue queue = session.createQueue(disname);
+            //消息消费者
             MessageConsumer consumer = null;
 
             if (threadLocal.get() != null) {
