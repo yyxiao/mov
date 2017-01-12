@@ -16,9 +16,13 @@ public class TestConsumer {
         Consumer consumer = new Consumer();
         consumer.init();
         TestConsumer testConsumer = new TestConsumer();
+        // Thread1
         new Thread(testConsumer.new ConsumerMq(consumer)).start();
+        // Thread2
         new Thread(testConsumer.new ConsumerMq(consumer)).start();
+        // Thread3
         new Thread(testConsumer.new ConsumerMq(consumer)).start();
+        // Thread4
         new Thread(testConsumer.new ConsumerMq(consumer)).start();
     }
 

@@ -48,6 +48,12 @@ public class Producter {
         }
     }
 
+    /**
+     * 发送消息
+     * @author Xender
+     * @Date 17/1/12 上午9:38
+     * The word 'impossible' is not in my dictionary.
+     */
     public void sendMessage(String disname) {
         try {
             //创建一个消息队列
@@ -65,7 +71,7 @@ public class Producter {
                 int num = count.getAndIncrement();
                 //创建一条消息
                 TextMessage msg = session.createTextMessage(Thread.currentThread().getName() + "Producter:生产者，正在生产东西！count:" + num);
-                System.out.println(Thread.currentThread().getName() + "生产者，正在生产东西！count:" + num);
+                System.out.println(Thread.currentThread().getName() + "Producter:生产者，正在生产东西！count:" + num);
                 //发送消息
                 messageProducer.send(msg);
                 //提交事务
@@ -77,6 +83,5 @@ public class Producter {
             e.printStackTrace();
         }
     }
-
 
 }
