@@ -6,8 +6,8 @@ import org.apache.activemq.broker.Connection;
  * TestConsumer
  * activeMq
  *
+ * 客户端消费者测试
  * @author xiaoyy
- * @TODO
  * @Date 2017-01-11 下午3:09
  * The word 'impossible' is not in my dictionary.
  */
