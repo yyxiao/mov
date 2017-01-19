@@ -12,14 +12,16 @@ import org.apache.activemq.broker.Connection;
  * The word 'impossible' is not in my dictionary.
  */
 public class TestConsumer {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         Consumer consumer = new Consumer();
         consumer.init();
         TestConsumer testConsumer = new TestConsumer();
         // Thread1
-        new Thread(testConsumer.new ConsumerMq(consumer)).start();
+        Thread thread1 = new Thread(testConsumer.new ConsumerMq(consumer));
+        thread1.join();
         // Thread2
-        new Thread(testConsumer.new ConsumerMq(consumer)).start();
+        Thread thread2 = new Thread(testConsumer.new ConsumerMq(consumer));
+        thread2.join();
         // Thread3
         new Thread(testConsumer.new ConsumerMq(consumer)).start();
         // Thread4
