@@ -1,4 +1,4 @@
-package threadRun;
+package test.threadRun;
 
 /**
  * JoinTestDemo

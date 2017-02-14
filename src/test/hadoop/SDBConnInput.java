@@ -1,4 +1,5 @@
-package hadoop; /**
+package test.hadoop;
+/**
  * SDBConnInput
  * <p>
  * PACKAGE_NAME

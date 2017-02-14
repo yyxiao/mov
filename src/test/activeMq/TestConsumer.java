@@ -1,4 +1,4 @@
-package activeMq;
+package test.activeMq;
 
 import org.apache.activemq.broker.Connection;
 
