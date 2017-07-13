@@ -43,9 +43,22 @@ public class DBHelper {
         } catch (Exception e) {  
             e.printStackTrace();  
         }  
-    }  
-  
-    public void close() {  
+    }
+
+    public DBHelper(String sql, String params[]) {
+        try {
+            //指定连接类型
+            Class.forName(driverName);
+            //获取连接
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8", "root", "root");
+            //准备执行语句
+            pst = conn.prepareStatement(sql, params);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void close() {
         try {  
             this.conn.close();  
             this.pst.close();  
