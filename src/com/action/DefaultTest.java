@@ -3,20 +3,17 @@ package com.action;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
-import com.alipay.api.request.AlipayOpenPublicTemplateMessageIndustryModifyRequest;
 import com.alipay.api.request.ZhimaCustomerCertificationCertifyRequest;
 import com.alipay.api.request.ZhimaCustomerCertificationInitializeRequest;
-import com.alipay.api.request.ZhimaCustomerCertificationQueryRequest;
 import com.alipay.api.response.ZhimaCustomerCertificationCertifyResponse;
 import com.alipay.api.response.ZhimaCustomerCertificationInitializeResponse;
-import com.alipay.api.response.ZhimaCustomerCertificationQueryResponse;
 
 /**
  * DefaultAlipayClient
  * com.action
  *
  * @author xiaoyy
- * 芝麻认证
+ * 芝麻认证Demo
  * @Date 2017-07-24 上午11:53
  * The word 'impossible' is not in my dictionary.
  */

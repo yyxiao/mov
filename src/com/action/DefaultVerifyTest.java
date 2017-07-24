@@ -15,7 +15,7 @@ import com.alipay.api.response.ZhimaCustomerCertificationInitializeResponse;
  * com.action
  *
  * @author xiaoyy
- * 芝麻认证
+ * 欺诈信息验证Demo
  * @Date 2017-07-24 上午11:53
  * The word 'impossible' is not in my dictionary.
  */
