@@ -49,6 +49,6 @@ public class AliOauthAction {
                 e.printStackTrace();
             }
         }
-        return flag;
+//        return flag;
     }
 }
