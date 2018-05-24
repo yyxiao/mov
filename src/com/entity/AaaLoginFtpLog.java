@@ -61,196 +61,459 @@ public class AaaLoginFtpLog {
 
     private String aaaFtpname;
 
-    public String getAaaFtpname() {
-        return aaaFtpname;
-    }
-
-    public AaaLoginFtpLog setAaaFtpname(String aaaFtpname) {
-        this.aaaFtpname = aaaFtpname;
-        return this;
-    }
-
+    /**
+     * Getter for property 'aaaLoginFtpLogId'.
+     *
+     * @return Value for property 'aaaLoginFtpLogId'.
+     */
     public String getAaaLoginFtpLogId() {
         return aaaLoginFtpLogId;
     }
 
-    public void setAaaLoginFtpLogId(String aaaLoginFtpLogId) {
-        this.aaaLoginFtpLogId = aaaLoginFtpLogId == null ? null : aaaLoginFtpLogId.trim();
+    /**
+     * Setter for property 'aaaLoginFtpLogId'.
+     *
+     * @param aaaLoginFtpLogId Value to set for property 'aaaLoginFtpLogId'.
+     */
+    public AaaLoginFtpLog setAaaLoginFtpLogId(String aaaLoginFtpLogId) {
+        this.aaaLoginFtpLogId = aaaLoginFtpLogId;
+        return this;
     }
 
+    /**
+     * Getter for property 'chargeTpye'.
+     *
+     * @return Value for property 'chargeTpye'.
+     */
     public String getChargeTpye() {
         return chargeTpye;
     }
 
-    public void setChargeTpye(String chargeTpye) {
-        this.chargeTpye = chargeTpye == null ? null : chargeTpye.trim();
+    /**
+     * Setter for property 'chargeTpye'.
+     *
+     * @param chargeTpye Value to set for property 'chargeTpye'.
+     */
+    public AaaLoginFtpLog setChargeTpye(String chargeTpye) {
+        this.chargeTpye = chargeTpye;
+        return this;
     }
 
+    /**
+     * Getter for property 'accessType'.
+     *
+     * @return Value for property 'accessType'.
+     */
     public String getAccessType() {
         return accessType;
     }
 
-    public void setAccessType(String accessType) {
-        this.accessType = accessType == null ? null : accessType.trim();
+    /**
+     * Setter for property 'accessType'.
+     *
+     * @param accessType Value to set for property 'accessType'.
+     */
+    public AaaLoginFtpLog setAccessType(String accessType) {
+        this.accessType = accessType;
+        return this;
     }
 
+    /**
+     * Getter for property 'belongNet'.
+     *
+     * @return Value for property 'belongNet'.
+     */
     public String getBelongNet() {
         return belongNet;
     }
 
-    public void setBelongNet(String belongNet) {
-        this.belongNet = belongNet == null ? null : belongNet.trim();
+    /**
+     * Setter for property 'belongNet'.
+     *
+     * @param belongNet Value to set for property 'belongNet'.
+     */
+    public AaaLoginFtpLog setBelongNet(String belongNet) {
+        this.belongNet = belongNet;
+        return this;
     }
 
+    /**
+     * Getter for property 'visitNet'.
+     *
+     * @return Value for property 'visitNet'.
+     */
     public String getVisitNet() {
         return visitNet;
     }
 
-    public void setVisitNet(String visitNet) {
-        this.visitNet = visitNet == null ? null : visitNet.trim();
+    /**
+     * Setter for property 'visitNet'.
+     *
+     * @param visitNet Value to set for property 'visitNet'.
+     */
+    public AaaLoginFtpLog setVisitNet(String visitNet) {
+        this.visitNet = visitNet;
+        return this;
     }
 
+    /**
+     * Getter for property 'ticketSource'.
+     *
+     * @return Value for property 'ticketSource'.
+     */
     public String getTicketSource() {
         return ticketSource;
     }
 
-    public void setTicketSource(String ticketSource) {
-        this.ticketSource = ticketSource == null ? null : ticketSource.trim();
+    /**
+     * Setter for property 'ticketSource'.
+     *
+     * @param ticketSource Value to set for property 'ticketSource'.
+     */
+    public AaaLoginFtpLog setTicketSource(String ticketSource) {
+        this.ticketSource = ticketSource;
+        return this;
     }
 
+    /**
+     * Getter for property 'initialSource'.
+     *
+     * @return Value for property 'initialSource'.
+     */
     public String getInitialSource() {
         return initialSource;
     }
 
-    public void setInitialSource(String initialSource) {
-        this.initialSource = initialSource == null ? null : initialSource.trim();
+    /**
+     * Setter for property 'initialSource'.
+     *
+     * @param initialSource Value to set for property 'initialSource'.
+     */
+    public AaaLoginFtpLog setInitialSource(String initialSource) {
+        this.initialSource = initialSource;
+        return this;
     }
 
+    /**
+     * Getter for property 'account'.
+     *
+     * @return Value for property 'account'.
+     */
     public String getAccount() {
         return account;
     }
 
-    public void setAccount(String account) {
-        this.account = account == null ? null : account.trim();
+    /**
+     * Setter for property 'account'.
+     *
+     * @param account Value to set for property 'account'.
+     */
+    public AaaLoginFtpLog setAccount(String account) {
+        this.account = account;
+        return this;
     }
 
+    /**
+     * Getter for property 'accessDesc'.
+     *
+     * @return Value for property 'accessDesc'.
+     */
     public String getAccessDesc() {
         return accessDesc;
     }
 
-    public void setAccessDesc(String accessDesc) {
-        this.accessDesc = accessDesc == null ? null : accessDesc.trim();
+    /**
+     * Setter for property 'accessDesc'.
+     *
+     * @param accessDesc Value to set for property 'accessDesc'.
+     */
+    public AaaLoginFtpLog setAccessDesc(String accessDesc) {
+        this.accessDesc = accessDesc;
+        return this;
     }
 
+    /**
+     * Getter for property 'accessAdd'.
+     *
+     * @return Value for property 'accessAdd'.
+     */
     public String getAccessAdd() {
         return accessAdd;
     }
 
-    public void setAccessAdd(String accessAdd) {
-        this.accessAdd = accessAdd == null ? null : accessAdd.trim();
+    /**
+     * Setter for property 'accessAdd'.
+     *
+     * @param accessAdd Value to set for property 'accessAdd'.
+     */
+    public AaaLoginFtpLog setAccessAdd(String accessAdd) {
+        this.accessAdd = accessAdd;
+        return this;
     }
 
+    /**
+     * Getter for property 'accessSign'.
+     *
+     * @return Value for property 'accessSign'.
+     */
     public String getAccessSign() {
         return accessSign;
     }
 
-    public void setAccessSign(String accessSign) {
-        this.accessSign = accessSign == null ? null : accessSign.trim();
+    /**
+     * Setter for property 'accessSign'.
+     *
+     * @param accessSign Value to set for property 'accessSign'.
+     */
+    public AaaLoginFtpLog setAccessSign(String accessSign) {
+        this.accessSign = accessSign;
+        return this;
     }
 
+    /**
+     * Getter for property 'sessionId'.
+     *
+     * @return Value for property 'sessionId'.
+     */
     public String getSessionId() {
         return sessionId;
     }
 
-    public void setSessionId(String sessionId) {
-        this.sessionId = sessionId == null ? null : sessionId.trim();
+    /**
+     * Setter for property 'sessionId'.
+     *
+     * @param sessionId Value to set for property 'sessionId'.
+     */
+    public AaaLoginFtpLog setSessionId(String sessionId) {
+        this.sessionId = sessionId;
+        return this;
     }
 
+    /**
+     * Getter for property 'appIp'.
+     *
+     * @return Value for property 'appIp'.
+     */
     public String getAppIp() {
         return appIp;
     }
 
-    public void setAppIp(String appIp) {
-        this.appIp = appIp == null ? null : appIp.trim();
+    /**
+     * Setter for property 'appIp'.
+     *
+     * @param appIp Value to set for property 'appIp'.
+     */
+    public AaaLoginFtpLog setAppIp(String appIp) {
+        this.appIp = appIp;
+        return this;
     }
 
+    /**
+     * Getter for property 'callingNo'.
+     *
+     * @return Value for property 'callingNo'.
+     */
     public String getCallingNo() {
         return callingNo;
     }
 
-    public void setCallingNo(String callingNo) {
-        this.callingNo = callingNo == null ? null : callingNo.trim();
+    /**
+     * Setter for property 'callingNo'.
+     *
+     * @param callingNo Value to set for property 'callingNo'.
+     */
+    public AaaLoginFtpLog setCallingNo(String callingNo) {
+        this.callingNo = callingNo;
+        return this;
     }
 
+    /**
+     * Getter for property 'macNum'.
+     *
+     * @return Value for property 'macNum'.
+     */
     public String getMacNum() {
         return macNum;
     }
 
-    public void setMacNum(String macNum) {
-        this.macNum = macNum == null ? null : macNum.trim();
+    /**
+     * Setter for property 'macNum'.
+     *
+     * @param macNum Value to set for property 'macNum'.
+     */
+    public AaaLoginFtpLog setMacNum(String macNum) {
+        this.macNum = macNum;
+        return this;
     }
 
+    /**
+     * Getter for property 'calledNo'.
+     *
+     * @return Value for property 'calledNo'.
+     */
     public String getCalledNo() {
         return calledNo;
     }
 
-    public void setCalledNo(String calledNo) {
-        this.calledNo = calledNo == null ? null : calledNo.trim();
+    /**
+     * Setter for property 'calledNo'.
+     *
+     * @param calledNo Value to set for property 'calledNo'.
+     */
+    public AaaLoginFtpLog setCalledNo(String calledNo) {
+        this.calledNo = calledNo;
+        return this;
     }
 
+    /**
+     * Getter for property 'startTime'.
+     *
+     * @return Value for property 'startTime'.
+     */
     public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(String startTime) {
-        this.startTime = startTime == null ? null : startTime.trim();
+    /**
+     * Setter for property 'startTime'.
+     *
+     * @param startTime Value to set for property 'startTime'.
+     */
+    public AaaLoginFtpLog setStartTime(String startTime) {
+        this.startTime = startTime;
+        return this;
     }
 
+    /**
+     * Getter for property 'endTime'.
+     *
+     * @return Value for property 'endTime'.
+     */
     public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(String endTime) {
-        this.endTime = endTime == null ? null : endTime.trim();
+    /**
+     * Setter for property 'endTime'.
+     *
+     * @param endTime Value to set for property 'endTime'.
+     */
+    public AaaLoginFtpLog setEndTime(String endTime) {
+        this.endTime = endTime;
+        return this;
     }
 
+    /**
+     * Getter for property 'callTime'.
+     *
+     * @return Value for property 'callTime'.
+     */
     public BigDecimal getCallTime() {
         return callTime;
     }
 
-    public void setCallTime(BigDecimal callTime) {
+    /**
+     * Setter for property 'callTime'.
+     *
+     * @param callTime Value to set for property 'callTime'.
+     */
+    public AaaLoginFtpLog setCallTime(BigDecimal callTime) {
         this.callTime = callTime;
+        return this;
     }
 
+    /**
+     * Getter for property 'inDischarge'.
+     *
+     * @return Value for property 'inDischarge'.
+     */
     public String getInDischarge() {
         return inDischarge;
     }
 
-    public void setInDischarge(String inDischarge) {
-        this.inDischarge = inDischarge == null ? null : inDischarge.trim();
+    /**
+     * Setter for property 'inDischarge'.
+     *
+     * @param inDischarge Value to set for property 'inDischarge'.
+     */
+    public AaaLoginFtpLog setInDischarge(String inDischarge) {
+        this.inDischarge = inDischarge;
+        return this;
     }
 
+    /**
+     * Getter for property 'outDischarge'.
+     *
+     * @return Value for property 'outDischarge'.
+     */
     public String getOutDischarge() {
         return outDischarge;
     }
 
-    public void setOutDischarge(String outDischarge) {
-        this.outDischarge = outDischarge == null ? null : outDischarge.trim();
+    /**
+     * Setter for property 'outDischarge'.
+     *
+     * @param outDischarge Value to set for property 'outDischarge'.
+     */
+    public AaaLoginFtpLog setOutDischarge(String outDischarge) {
+        this.outDischarge = outDischarge;
+        return this;
     }
 
+    /**
+     * Getter for property 'allDischarge'.
+     *
+     * @return Value for property 'allDischarge'.
+     */
     public String getAllDischarge() {
         return allDischarge;
     }
 
-    public void setAllDischarge(String allDischarge) {
-        this.allDischarge = allDischarge == null ? null : allDischarge.trim();
+    /**
+     * Setter for property 'allDischarge'.
+     *
+     * @param allDischarge Value to set for property 'allDischarge'.
+     */
+    public AaaLoginFtpLog setAllDischarge(String allDischarge) {
+        this.allDischarge = allDischarge;
+        return this;
     }
 
+    /**
+     * Getter for property 'country'.
+     *
+     * @return Value for property 'country'.
+     */
     public String getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
-        this.country = country == null ? null : country.trim();
+    /**
+     * Setter for property 'country'.
+     *
+     * @param country Value to set for property 'country'.
+     */
+    public AaaLoginFtpLog setCountry(String country) {
+        this.country = country;
+        return this;
+    }
+
+    /**
+     * Getter for property 'aaaFtpname'.
+     *
+     * @return Value for property 'aaaFtpname'.
+     */
+    public String getAaaFtpname() {
+        return aaaFtpname;
+    }
+
+    /**
+     * Setter for property 'aaaFtpname'.
+     *
+     * @param aaaFtpname Value to set for property 'aaaFtpname'.
+     */
+    public AaaLoginFtpLog setAaaFtpname(String aaaFtpname) {
+        this.aaaFtpname = aaaFtpname;
+        return this;
     }
 }
