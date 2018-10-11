@@ -4,8 +4,6 @@ import com.entity.AaaLoginFtpLog;
 import com.util.DBHelper;
 import org.apache.log4j.Logger;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.List;
 
 /**

@@ -31,7 +31,7 @@ public class DownloadsMusic {
     public static void main(String[] args) throws Exception {
         Map<String, String> maps = new HashMap<>();
         //获取请求连接
-        Connection con = Jsoup.connect("http://music.163.com/playlist?id=8479576");
+        Connection con = Jsoup.connect("http://music.163.com/playlist?id=133603638");
         //把String转化成document格式
         Document doc = con.header("Referer", "http://music.163.com/").header("Host", "music.163.com").get();
         //获取所有符合条件的节点集
@@ -60,11 +60,13 @@ public class DownloadsMusic {
      * @param name
      */
     public static void downloadByUrl(String newUrl, String name) throws Exception {
+        System.out.println(name.replaceAll("/","-"));
         //本地保存
-        FileOutputStream fs = new FileOutputStream("/Users/xiaoyy/Downloads/music/" + name + ".mp3");
+        FileOutputStream fs = new FileOutputStream("/Users/xiaoyy/Downloads/music/" + name.replaceAll("/","-") + ".mp3");
         // 下载网络文件
         int bytesum = 0;
         int byteread = 0;
+
 
         URL url = new URL("http://music.163.com/song/media/outer/url?id=" + newUrl + ".mp3");
 
