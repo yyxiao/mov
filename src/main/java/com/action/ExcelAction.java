@@ -1,7 +1,9 @@
 package com.action;
 
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -25,7 +27,9 @@ public class ExcelAction {
 //        System.out.println(md5.decrypt("dGR1BHV+eHUCNnNtBGAKZnEHd2dwEQU3c0N3TAdN", "jcms2008"));
 
 
-        Stream.iterate(2, item -> item + 1).limit(10).forEach(System.out::println);
+//        Stream.iterate(2, item -> item + 1).limit(10).forEach(System.out::println);
+        List<String> strings = Stream.of("C", "D", "A", "E").sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        System.out.println(strings);
     }
 
 }
